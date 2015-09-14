@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049926B17B0842480E235AD8 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0F23D1AA65B432D28B9D2F /* libPods-unit_tests.a */; };
+		46D96E21132562C8CAB6A3D5 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4830B67947194332964F30D6 /* FISAppDelegate.m */; };
+		4E4D1FCB94B758188E2E306A /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = B6D2E6D69F775907F1864545 /* LaunchScreen.xib */; };
+		6B21F5CD329596AC33B79FF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E852815CC567669D750BC142 /* Images.xcassets */; };
+		786BB43D3AAFEDE190BEE2D6 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = D859954437D87A778B706A99 /* Main.storyboard */; };
+		94A9D968C066691614402F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A242B381FAD1730527870F04 /* Foundation.framework */; };
+		B53EF2A7D52E46E3D7EF894F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D600AA73BAC02B2C41E55CA /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02A1E10F070440A2107F72C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24E5923E62902E2F641EA3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 872B49AABD58CDD5CF0AF0DD;
+			remoteInfo = "objc-palindrome-detector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F0F23D1AA65B432D28B9D2F /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4830B67947194332964F30D6 /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
+		56177234D2B50E76F3569EB6 /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
+		6F3FB7E75EEFE194B372AAB4 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		6FFCBEEED8CA415889676FC4 /* objc-palindrome-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-palindrome-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		785CE6BB9890F1337CFA0829 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
+		83D79FDE177DAB4A6467467E /* objc-palindrome-detector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "objc-palindrome-detector-Info.plist"; sourceTree = "<group>"; };
+		8D600AA73BAC02B2C41E55CA /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9840ECF18DDEA69A68E4FF44 /* objc-palindrome-detector-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objc-palindrome-detector-Prefix.pch"; sourceTree = "<group>"; };
+		A242B381FAD1730527870F04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B4C94A059D7A1A4DA31D840B /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D2E6D69F775907F1864545 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		BD68167688249F108962C010 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
+		D859954437D87A778B706A99 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E852815CC567669D750BC142 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F9220FCA29FA9AD2C37DD6AA /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0206F7715B047081C576DD27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A9D968C066691614402F8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE797070495C1FE60A6211C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049926B17B0842480E235AD8 /* libPods-unit_tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15D92A51A811F8020F7A9BAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEC2907571D919CA8A0AA65D /* iOS */,
+				2F0F23D1AA65B432D28B9D2F /* libPods-unit_tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1665EBEA857ADEAFD0B69947 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E852815CC567669D750BC142 /* Images.xcassets */,
+				B6D2E6D69F775907F1864545 /* LaunchScreen.xib */,
+				2C835F0A9EA39F236EC4C1C2 /* Other-Sources */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C835F0A9EA39F236EC4C1C2 /* Other-Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83D79FDE177DAB4A6467467E /* objc-palindrome-detector-Info.plist */,
+				9840ECF18DDEA69A68E4FF44 /* objc-palindrome-detector-Prefix.pch */,
+				8D600AA73BAC02B2C41E55CA /* main.m */,
+			);
+			path = "Other-Sources";
+			sourceTree = "<group>";
+		};
+		4DF23D68AB6F1EFE610F0D61 = {
+			isa = PBXGroup;
+			children = (
+				A2CFBD97789B2FCB66C978F8 /* objc-palindrome-detector */,
+				EC7FE7072C8B3CDC89C4D58B /* UnitTests */,
+				15D92A51A811F8020F7A9BAC /* Frameworks */,
+				9D86EC44F265E4303328898F /* Products */,
+				C6CAFFEC477253AF90AFA4A2 /* Pods */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		964F478B715B1EF0CB8E7783 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F3FB7E75EEFE194B372AAB4 /* UnitTests-Info.plist */,
+				F9220FCA29FA9AD2C37DD6AA /* UnitTests-Prefix.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D86EC44F265E4303328898F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FFCBEEED8CA415889676FC4 /* objc-palindrome-detector.app */,
+				B4C94A059D7A1A4DA31D840B /* UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2CFBD97789B2FCB66C978F8 /* objc-palindrome-detector */ = {
+			isa = PBXGroup;
+			children = (
+				56177234D2B50E76F3569EB6 /* FISAppDelegate.h */,
+				4830B67947194332964F30D6 /* FISAppDelegate.m */,
+				D859954437D87A778B706A99 /* Main.storyboard */,
+				1665EBEA857ADEAFD0B69947 /* Resources */,
+			);
+			path = "objc-palindrome-detector";
+			sourceTree = "<group>";
+		};
+		B812E58B07AA1ABBD0653A29 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C6CAFFEC477253AF90AFA4A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD68167688249F108962C010 /* Pods-unit_tests.release.xcconfig */,
+				785CE6BB9890F1337CFA0829 /* Pods-unit_tests.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC7FE7072C8B3CDC89C4D58B /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				964F478B715B1EF0CB8E7783 /* Resources */,
+				B812E58B07AA1ABBD0653A29 /* Tests */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		FEC2907571D919CA8A0AA65D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A242B381FAD1730527870F04 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C78D2D49D2D6FDF4881D75B /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C85F298900820B13F7670C2 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				050A92AB19A9DBDEBC3933DB /* Check Pods Manifest.lock */,
+				0FE0AF28DF5456A109D03224 /* Sources */,
+				ACE797070495C1FE60A6211C /* Frameworks */,
+				6DE4A3C177737D81BAAEA62A /* Resources */,
+				3E0AC541F7D2ECDA35E90B3E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06443B831FA5AB58F5BF9CF3 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = B4C94A059D7A1A4DA31D840B /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		872B49AABD58CDD5CF0AF0DD /* objc-palindrome-detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EC99644261AF3B50BBD5F3B /* Build configuration list for PBXNativeTarget "objc-palindrome-detector" */;
+			buildPhases = (
+				63C5A3C82518C55F01E0F2D9 /* Sources */,
+				0206F7715B047081C576DD27 /* Frameworks */,
+				EDB52FAFADA04722A8E7EC4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "objc-palindrome-detector";
+			productName = "objc-palindrome-detector";
+			productReference = 6FFCBEEED8CA415889676FC4 /* objc-palindrome-detector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C24E5923E62902E2F641EA3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FIS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "The Flatiron School";
+			};
+			buildConfigurationList = 93BDE10DD9844ABE7549AAD2 /* Build configuration list for PBXProject "objc-palindrome-detector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DF23D68AB6F1EFE610F0D61;
+			productRefGroup = 9D86EC44F265E4303328898F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				872B49AABD58CDD5CF0AF0DD /* objc-palindrome-detector */,
+				7C78D2D49D2D6FDF4881D75B /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DE4A3C177737D81BAAEA62A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDB52FAFADA04722A8E7EC4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B21F5CD329596AC33B79FF8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		050A92AB19A9DBDEBC3933DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E0AC541F7D2ECDA35E90B3E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FE0AF28DF5456A109D03224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C5A3C82518C55F01E0F2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D96E21132562C8CAB6A3D5 /* FISAppDelegate.m in Sources */,
+				786BB43D3AAFEDE190BEE2D6 /* Main.storyboard in Sources */,
+				4E4D1FCB94B758188E2E306A /* LaunchScreen.xib in Sources */,
+				B53EF2A7D52E46E3D7EF894F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06443B831FA5AB58F5BF9CF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 872B49AABD58CDD5CF0AF0DD /* objc-palindrome-detector */;
+			targetProxy = 02A1E10F070440A2107F72C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01D4B9B330F06BB17B72AFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		124EBCD828BEF61F5337B275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objc-palindrome-detector/Resources/Other-Sources/objc-palindrome-detector-Prefix.pch";
+				INFOPLIST_FILE = "objc-palindrome-detector/Resources/Other-Sources/objc-palindrome-detector-Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4427D2EAEA0DB4A94EFEC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objc-palindrome-detector/Resources/Other-Sources/objc-palindrome-detector-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "objc-palindrome-detector/Resources/Other-Sources/objc-palindrome-detector-Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9F20745B6B2BE438FA57D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785CE6BB9890F1337CFA0829 /* Pods-unit_tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/objc-palindrome-detector.app/objc-palindrome-detector";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D6BB2E98C500D509D3EC7D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD68167688249F108962C010 /* Pods-unit_tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/objc-palindrome-detector.app/objc-palindrome-detector";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		F452147880B20DEAD0546B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C85F298900820B13F7670C2 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BB2E98C500D509D3EC7D6C /* Release */,
+				B9F20745B6B2BE438FA57D82 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EC99644261AF3B50BBD5F3B /* Build configuration list for PBXNativeTarget "objc-palindrome-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124EBCD828BEF61F5337B275 /* Release */,
+				B4427D2EAEA0DB4A94EFEC8C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93BDE10DD9844ABE7549AAD2 /* Build configuration list for PBXProject "objc-palindrome-detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D4B9B330F06BB17B72AFE6 /* Debug */,
+				F452147880B20DEAD0546B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C24E5923E62902E2F641EA3C /* Project object */;
+}
