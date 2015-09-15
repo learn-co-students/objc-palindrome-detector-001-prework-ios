@@ -7,27 +7,32 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    // single word, all lowercae
+    // check stringByReversingString:
     NSString *palindrome = @"palindrome";
-    BOOL palindromeIsPalindrome = [self stringIsPalindrome:palindrome];
-    NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
+    NSString *reversed = [self stringByReversingString:palindrome];
+    NSLog(@"%@ : %@", palindrome, reversed);
     
+    
+    // single word, all lowercase
     NSString *racecar = @"racecar";
     BOOL racecarIsPalindrome = [self stringIsPalindrome:racecar];
     NSLog(@"%d : %@", racecarIsPalindrome, racecar);
+    
+    BOOL palindromeIsPalindrome = [self stringIsPalindrome:palindrome];
+    NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
     
     // single word, with uppercase
     NSString *bob = @"Bob";
     BOOL bobIsPalindrome = [self stringIsPalindrome:bob];
     NSLog(@"%d : %@", bobIsPalindrome, bob);
     
-    NSString *aibohphobia = @"Aibohphobia";
-    BOOL aibohphobiaIsPalindrome = [self stringIsPalindrome:aibohphobia];
-    NSLog(@"%d : %@", aibohphobiaIsPalindrome, aibohphobia);
-    
     NSString *kanakanak = @"Kanakanak";
     BOOL kanakanakIsPalindrome = [self stringIsPalindrome:kanakanak];
     NSLog(@"%d : %@", kanakanakIsPalindrome, kanakanak);
+    
+    NSString *aibohphobia = @"Aibohphobia";
+    BOOL aibohphobiaIsPalindrome = [self stringIsPalindrome:aibohphobia];
+    NSLog(@"%d : %@", aibohphobiaIsPalindrome, aibohphobia);
     
     // multiple words, no punctuation
     NSString *notAPalindrome = @"this is not a palindrome";
@@ -66,30 +71,34 @@
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
-    NSArray *punctuations = @[ @" ", @".", @",", @"!", @"?", @":", @";" ];
+    NSArray *punctuations = @[ @".", @",", @"!", @"?", @":", @";" ];
     
     for (NSUInteger i = 0; i < [punctuations count]; i++) {
         NSString *punctuation = punctuations[i];
         string = [string stringByReplacingOccurrencesOfString:punctuation withString:@""];
     }
     
-    string = [string lowercaseString];
+    NSString *spaceless = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
     
-    NSString *reverse = [self stringByReversingString:string];
+    NSString *lowercase = [spaceless lowercaseString];
     
-    if ([string isEqualToString:reverse]) {
-        return YES;
-    }
+    NSString *reverse = [self stringByReversingString:lowercase];
     
-    return NO;
+    BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
+    
+    return stringIsEqualToReverse;
 }
 
 - (NSString *)stringByReversingString:(NSString *)string {
+    
     NSString *result = @"";
+    
     for (NSUInteger i = [string length]; i > 0; i--) {
         NSUInteger index = i - 1;
-        result = [result stringByAppendingFormat:@"%c", [string characterAtIndex:index]];
+        unichar c = [string characterAtIndex:index];
+        result = [result stringByAppendingFormat:@"%c", c];
     }
+    
     return result;
 }
 
