@@ -99,8 +99,22 @@ Your `FISAppDelegate.m` file should now look something like this:
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-   return YES;
-}
+    
+    /**
+     
+     * Write your check code here.
+     
+     */
+
+    // do not alter
+    return YES;  //
+}   ///////////////
+
+/**
+ 
+ * Implement your methods here.
+ 
+ */
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
    return NO;

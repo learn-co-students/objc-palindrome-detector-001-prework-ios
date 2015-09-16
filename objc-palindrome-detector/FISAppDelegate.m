@@ -7,6 +7,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    /**
+     
+     * Write your check code here.
+     
+     */
+    
     // check stringByReversingString:
     NSString *palindrome = @"palindrome";
     NSString *reversed = [self stringByReversingString:palindrome];
@@ -60,8 +66,10 @@
     BOOL papayaWarIsPalindrome = [self stringIsPalindrome:papayaWar];
     NSLog(@"%d : %@", papayaWarIsPalindrome, papayaWar);
     
-    return YES;
-}
+    
+    // do not alter
+    return YES;  //
+}   ///////////////
 
 /**
  
