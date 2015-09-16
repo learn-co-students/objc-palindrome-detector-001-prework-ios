@@ -66,7 +66,6 @@
     BOOL papayaWarIsPalindrome = [self stringIsPalindrome:papayaWar];
     NSLog(@"%d : %@", papayaWarIsPalindrome, papayaWar);
     
-    
     // do not alter
     return YES;  //
 }   ///////////////
