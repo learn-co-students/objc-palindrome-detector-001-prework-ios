@@ -80,13 +80,14 @@
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
     NSArray *punctuations = @[ @".", @",", @"!", @"?", @":", @";" ];
+    NSString *withoutPunctuation = [string copy];
     
     for (NSUInteger i = 0; i < [punctuations count]; i++) {
         NSString *punctuation = punctuations[i];
-        string = [string stringByReplacingOccurrencesOfString:punctuation withString:@""];
+        withoutPunctuation = [withoutPunctuation stringByReplacingOccurrencesOfString:punctuation withString:@""];
     }
     
-    NSString *spaceless = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     NSString *lowercase = [spaceless lowercaseString];
     
@@ -104,7 +105,7 @@
     for (NSUInteger i = [string length]; i > 0; i--) {
         NSUInteger index = i - 1;
         unichar c = [string characterAtIndex:index];
-        result = [result stringByAppendingFormat:@"%c", c];
+        result = [result stringByAppendingFormat:@"%C", c];
     }
     
     return result;

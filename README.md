@@ -147,7 +147,7 @@ One possible implementation of this process in Objective-C is written below:
     for (NSUInteger i = [string length]; i > 0; i--) {
         NSUInteger index = i - 1;
         unichar c = [string characterAtIndex:index];
-        result = [result stringByAppendingFormat:@"%c", c];
+        result = [result stringByAppendingFormat:@"%C", c];
     }
     
     return result;
@@ -160,7 +160,7 @@ Let's walk through what this method is doing:
 2. Declaring a `for` loop whose counter begins at the size of the string's length and counts down (decrements) to `1` (*remember that the length will always be one more than the maximum index*).
 3. Defines an integer called `index` that is one less than the current value of `i`. This is to solve the off-by-one difference between the value of the string's `length` and the value of its highest index.
 4. Finds the next character (`unichar c`) to be copied by using the `index` integer to call the `characterAtIndex:` method on the argument `string`.
-5. Appends that character (`c`) to the end of the `result` string. This uses the character format specifier (`%c`) to interpolate the character variable `c` into a string that can be appended normally.
+5. Appends that character (`c`) to the end of the `result` string. This uses the `unichar` format specifier (`%C`) to interpolate the character variable `c` into a string that can be appended normally.
 6. After the loop counts down to `1`, the `result` string should be complete, and it is returned at the end of the method.
 
 Once you have a conceptual understanding of this implementation, copy it into your code.
@@ -269,16 +269,16 @@ Running the program now should print these three lines with zeroes:
 ```
 The implementation of handling these additional cases in `stringIsPalindrome:` is relatively simple: we just need to lowercase the `string` argument before we evaluate it, right? Let's try it:
 
-1 — Insert a statement that reassigns to `string` the result of calling the `lowercase` method on it:
+1 — Insert a statement that creates a new `NSString` variable called `lowercase` use to capture the return of calling the `lowercase` method on the `string` argument. Then refactor the string comparison to evaluate `lowercase` against `reverse`:
 
 ```objc
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
     NSString *reverse = [self stringByReversingString:string];
     
-    string = [string lowercaseString];
+    NSString *lowercase = [string lowercaseString];
 
-    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
+    BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
     
     return stringIsEqualToReverse;
 }
@@ -297,10 +297,10 @@ What did we do wrong? Let's add an `NSLog()` right before the comparison to insp
     
     NSString *reverse = [self stringByReversingString:string];
     
-    string = [string lowercaseString];
+    NSString *lowercase = [string lowercaseString];
 
-    NSLog(@"string: %@, reverse: %@", string, reverse);
-    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
+    NSLog(@"lowercase: %@, reverse: %@", lowercase, reverse);
+    BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
     
     return stringIsEqualToReverse;
 }
@@ -308,20 +308,16 @@ What did we do wrong? Let's add an `NSLog()` right before the comparison to insp
 Running the program will cause this to print:
 
 ```
-string: bob, reverse: boB
+lowercase: bob, reverse: boB
 0 : Bob
-string: kanakanak, reverse: kanakanaK
+lowercase: kanakanak, reverse: kanakanaK
 0 : Kanakanak
-string: aibohphobia, reverse: aibohphobiA
+lowercase: aibohphobia, reverse: aibohphobiA
 0 : Aibohphobia
 ```
 It looks like we reversed the string *before* we lowercased it, which means that we're comparing the lowercased version to a reversed version that contains an uppercase letter in it. This causes the comparison to fail.
 
-Let's delete the line we just wrote. Instead, let's start the method by creating a new `NSString` variable called `lowercase` and using it to capture the return of calling `lowercaseString` on the `string` argument variable:
-
-  * `NSString *lowercase = [string lowercaseString];`
-
-Now let's refactor the rest of the method implementation to use the `lowercase` variable instead of the `string` variable:
+To fix this, we should be move the statement creating `lowercase` to above the statement creating the `reverse` string, and refactor `reverse`'s assignment to use `lowercase` as its method argument instead of `string`:
 
 ```objc
 - (BOOL)stringIsPalindrome:(NSString *)string {
@@ -435,16 +431,20 @@ Running the program now should print these sentences with zeroes:
 0 : No sir! Away! A papaya war is on.
 ```
 
-We can remove the punctuation characters from the `string` argument variable by using `stringByReplacingOccurrencesOfString:withString:` again. If we collect our punctuation characters into an array, we can iterate over each punctuation string with a `for` loop, replacing every punctuation character in `string` with an empty string instead. Let's do this now at the top of the `stringIsPalindrome:` method implementation:
+We can remove the punctuation characters from the `string` argument variable by using `stringByReplacingOccurrencesOfString:withString:` again. If we collect our punctuation characters into an array, we can iterate over each punctuation string with a `for` loop, replacing every punctuation character in the string with an empty string instead. Let's do this now at the top of the `stringIsPalindrome:` method implementation:
 
 1. Create a new `NSArray` called `punctuations` and assign it to an array literal containing the string literals for the six common punctuation characters `.`, `,`, `!`, `?`, `:`, and `;` (period, comma, exclamation point, question mark, colon, and semicolon):
   * `NSArray *punctuations = @[ @".", @",", @"!", @"?", @":", @";" ];`
-2. Start a `for` loop that iterates over the `punctuations` array:
+2. Create a new `NSString` variable called `withoutPunctuation` and assign to a copy of the `string` argument variable:
+  * `NSString *withoutPunctuation = [string copy];`
+3. Start a `for` loop that iterates over the `punctuations` array:
   * `for (NSUInteger i = 0; i < [punctuations count]; i++) {...}`
-3. Within the `for` loop, create new `NSString` variable called `punctuation` and assign it to the subscript of the `punctuations` array using the current value of `i`:
+4. Within the `for` loop, create new `NSString` variable called `punctuation` and assign it to the subscript of the `punctuations` array using the current value of `i`:
   * `NSString *punctuation = punctuations[i];`
-4. Still within the `for` loop, reassign the `string` argument variable to capture a call of the `stringByReplacingOccurrencesOfString:withString:` method on the `string` argument variable (itself). The first argument should be the `punctuation` string variable, and the second argument should be an empty string literal (`@""`):
-  * `string = [string stringByReplacingOccurrencesOfString:punctuation withString:@""];`
+5. Still within the `for` loop, reassign the `withoutPunctuation` variable to capture a call of the `stringByReplacingOccurrencesOfString:withString:` method on the `withoutPunctuation` variable (itself). The first argument should be the `punctuation` string variable, and the second argument should be an empty string literal (`@""`):
+  * `withoutPunctuation = [withoutPunctuation stringByReplacingOccurrencesOfString:punctuation withString:@""];`
+6. Refactor the creation of the `spaceless` variable to use `withoutPunctuation` instead of the `string` argument variable:
+  * `NSString *spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@" " withString:@""];`
  
 The `stringIsPalindrome:` should now look something like this:
 
@@ -452,14 +452,15 @@ The `stringIsPalindrome:` should now look something like this:
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
     NSArray *punctuations = @[ @".", @",", @"!", @"?", @":", @";" ];
+    NSString *withoutPunctuation = [string copy];
     
     for (NSUInteger i = 0; i < [punctuations count]; i++) {
         NSString *punctuation = punctuations[i];
-        string = [string stringByReplacingOccurrencesOfString:punctuation withString:@""];
+        withoutPunctuation = [withoutPunctuation stringByReplacingOccurrencesOfString:punctuation withString:@""];
     }
     
-    NSString *spaceless = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
+    NSString *spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@" " withString:@""];
+        
     NSString *lowercase = [spaceless lowercaseString];
     
     NSString *reverse = [self stringByReversingString:lowercase];
