@@ -203,7 +203,7 @@ That sounds like a solid plan! Now let's write the implementation:
 
 Your method implementation should look something like this:
 
-```obj
+```objc
 - (BOOL)stringIsPalindrome:(NSString *)string {
        
     NSString *reverse = [self stringByReversingString:string];
