@@ -6,7 +6,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-- (BOOL)stringsInPalindrome:(NSString *)string;
+- (BOOL)stringIsPalindrome:(NSString *)string;
 
 - (NSString *)stringsByReversingString:(NSString *)string;
 
