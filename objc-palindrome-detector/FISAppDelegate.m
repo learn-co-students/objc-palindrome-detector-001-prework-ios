@@ -85,7 +85,7 @@
  */
 
 -(BOOL)stringIsPalindrome: (NSString * )string {
-   return NO;
+   //return NO;
     NSArray *punctuations= @[ @".", @",", @"!", @"?", @":", @";" ];
     
     NSString * withoutPunctuation =[string copy];
@@ -101,7 +101,7 @@
     
     NSString *reverse=[self stringByReversingString: lowercase]; // return of calling the lowercase method on the string argument
 
-//    NSLog(@"lowercase: %@, reverse: %@", lowercase, reverse); // Add NSLog to inspect strings
+   //NSLog(@"lowercase: %@, reverse: %@", lowercase, reverse); // Add NSLog to inspect strings
     
     BOOL stringIsEqualToReverse= [lowercase isEqualToString:reverse];
     
@@ -110,7 +110,7 @@
 }
 
 -(NSString *)stringByReversingString:(NSString *)string {
-//    return nil;
+ //  return nil;
     
 
     // Reversing a String Practice
