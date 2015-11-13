@@ -85,7 +85,7 @@
  */
 
 -(BOOL)stringIsPalindrome: (NSString * )string {
-//   return NO;
+   return NO;
     NSArray *punctuations= @[ @".", @",", @"!", @"?", @":", @";" ];
     
     NSString * withoutPunctuation =[string copy];
@@ -93,7 +93,7 @@
         NSString *punctuation = punctuations[i];
         withoutPunctuation = [withoutPunctuation stringByReplacingOccurrencesOfString:punctuation withString:@""];
     }
-    NSString * spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@"" withString:@""];
+    NSString * spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     // Detecting a Palindrome Practice
     
