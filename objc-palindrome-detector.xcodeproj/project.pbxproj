@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049926B17B0842480E235AD8 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0F23D1AA65B432D28B9D2F /* libPods-unit_tests.a */; };
 		46D96E21132562C8CAB6A3D5 /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4830B67947194332964F30D6 /* FISAppDelegate.m */; };
 		4E4D1FCB94B758188E2E306A /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = B6D2E6D69F775907F1864545 /* LaunchScreen.xib */; };
 		6B21F5CD329596AC33B79FF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E852815CC567669D750BC142 /* Images.xcassets */; };
@@ -16,18 +15,7 @@
 		B53EF2A7D52E46E3D7EF894F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D600AA73BAC02B2C41E55CA /* main.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		02A1E10F070440A2107F72C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C24E5923E62902E2F641EA3C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 872B49AABD58CDD5CF0AF0DD;
-			remoteInfo = "objc-palindrome-detector";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		2F0F23D1AA65B432D28B9D2F /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4830B67947194332964F30D6 /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		56177234D2B50E76F3569EB6 /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		6F3FB7E75EEFE194B372AAB4 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -36,7 +24,6 @@
 		8D600AA73BAC02B2C41E55CA /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9840ECF18DDEA69A68E4FF44 /* objc-palindrome-detector-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objc-palindrome-detector-Prefix.pch"; sourceTree = "<group>"; };
 		A242B381FAD1730527870F04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B4C94A059D7A1A4DA31D840B /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D2E6D69F775907F1864545 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		D859954437D87A778B706A99 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E852815CC567669D750BC142 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -52,14 +39,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACE797070495C1FE60A6211C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				049926B17B0842480E235AD8 /* libPods-unit_tests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				FEC2907571D919CA8A0AA65D /* iOS */,
-				2F0F23D1AA65B432D28B9D2F /* libPods-unit_tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				6FFCBEEED8CA415889676FC4 /* objc-palindrome-detector.app */,
-				B4C94A059D7A1A4DA31D840B /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,26 +138,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C78D2D49D2D6FDF4881D75B /* UnitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C85F298900820B13F7670C2 /* Build configuration list for PBXNativeTarget "UnitTests" */;
-			buildPhases = (
-				050A92AB19A9DBDEBC3933DB /* Check Pods Manifest.lock */,
-				0FE0AF28DF5456A109D03224 /* Sources */,
-				ACE797070495C1FE60A6211C /* Frameworks */,
-				6DE4A3C177737D81BAAEA62A /* Resources */,
-				3E0AC541F7D2ECDA35E90B3E /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				06443B831FA5AB58F5BF9CF3 /* PBXTargetDependency */,
-			);
-			name = UnitTests;
-			productName = UnitTests;
-			productReference = B4C94A059D7A1A4DA31D840B /* UnitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		872B49AABD58CDD5CF0AF0DD /* objc-palindrome-detector */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EC99644261AF3B50BBD5F3B /* Build configuration list for PBXNativeTarget "objc-palindrome-detector" */;
@@ -221,19 +178,11 @@
 			projectRoot = "";
 			targets = (
 				872B49AABD58CDD5CF0AF0DD /* objc-palindrome-detector */,
-				7C78D2D49D2D6FDF4881D75B /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6DE4A3C177737D81BAAEA62A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EDB52FAFADA04722A8E7EC4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,47 +194,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		050A92AB19A9DBDEBC3933DB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3E0AC541F7D2ECDA35E90B3E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		0FE0AF28DF5456A109D03224 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		63C5A3C82518C55F01E0F2D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,14 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		06443B831FA5AB58F5BF9CF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 872B49AABD58CDD5CF0AF0DD /* objc-palindrome-detector */;
-			targetProxy = 02A1E10F070440A2107F72C6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01D4B9B330F06BB17B72AFE6 /* Debug */ = {
@@ -414,46 +315,6 @@
 			};
 			name = Debug;
 		};
-		B9F20745B6B2BE438FA57D82 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/objc-palindrome-detector.app/objc-palindrome-detector";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D6BB2E98C500D509D3EC7D6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/objc-palindrome-detector.app/objc-palindrome-detector";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PREFIX_HEADER = "UnitTests/Resources/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/Resources/UnitTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		F452147880B20DEAD0546B22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -505,15 +366,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C85F298900820B13F7670C2 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6BB2E98C500D509D3EC7D6C /* Release */,
-				B9F20745B6B2BE438FA57D82 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6EC99644261AF3B50BBD5F3B /* Build configuration list for PBXNativeTarget "objc-palindrome-detector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
