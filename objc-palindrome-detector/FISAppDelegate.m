@@ -12,12 +12,27 @@
    
     NSLog(@"%@ : %@", palindrome, reversed);
     
+   NSString *racecar = @"racecar";
+   BOOL racecarIsPalindrome = [self stringIsPalindrome:racecar];
+   BOOL palindromeIsPalindrome = [self stringIsPalindrome:palindrome];
+    
+    NSLog(@"%d : %@", racecarIsPalindrome, racecar);
+    NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
+   
+    
+    
+    
     // do not alter
     return YES;  //
 }   ///////////////
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
-    return NO;
+    
+    NSString *reverse = [self stringByReversingString:string];
+    
+    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
+    
+    return stringIsEqualToReverse;
 }
 
 - (NSString *)stringByReversingString:(NSString *)string {
