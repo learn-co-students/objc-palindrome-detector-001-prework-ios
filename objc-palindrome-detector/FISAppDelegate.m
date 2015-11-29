@@ -17,10 +17,12 @@
     return YES;  //
 }   ///////////////
 
-/**
- 
- * Implement your methods here.
- 
- */
+- (BOOL)stringIsPalindrome:(NSString *)string {
+    return NO;
+}
+
+- (NSString *)stringByReversingString:(NSString *)string {
+    return nil;
+}
 
 @end
