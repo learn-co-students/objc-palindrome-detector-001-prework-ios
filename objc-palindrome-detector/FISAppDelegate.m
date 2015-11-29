@@ -18,6 +18,20 @@
     
     NSLog(@"%d : %@", racecarIsPalindrome, racecar);
     NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
+    
+   //single word, with uppercase
+   NSString *bob = @"Bob";
+   BOOL bobIsPalindrome = [self stringIsPalindrome:bob];
+    NSLog(@"%d : %@", bobIsPalindrome, bob);
+    
+   NSString *kanakanak = @"Kanakanak";
+   BOOL kanakanakIsPalindrome = [self stringIsPalindrome:kanakanak];
+    NSLog(@"%d : %@", kanakanakIsPalindrome, kanakanak);
+    
+   NSString *aibohphobia = @"Aibohphobia";
+   BOOL aibohphobiaIsPalindrome = [self stringIsPalindrome:aibohphobia];
+    NSLog(@"%d : %@", aibohphobiaIsPalindrome, aibohphobia);
+    
    
     
     
@@ -28,9 +42,13 @@
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
-    NSString *reverse = [self stringByReversingString:string];
+    NSString *lowercase = [string lowercaseString];
     
-    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
+    NSString *reverse = [self stringByReversingString:lowercase];
+    
+    NSLog(@"lowercase: %@, reverse: %@", lowercase, reverse);
+    
+    BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
     
     return stringIsEqualToReverse;
 }
