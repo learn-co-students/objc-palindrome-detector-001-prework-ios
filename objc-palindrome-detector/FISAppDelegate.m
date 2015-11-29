@@ -44,6 +44,18 @@
    BOOL iPreferPiIsPalindrome = [self stringIsPalindrome:iPreferPi];
     NSLog(@"%d : %@", iPreferPiIsPalindrome, iPreferPi);
     
+   NSString *fleeToMe = @"Flee to me, remote elf.";
+   BOOL fleeToMeIsPalindrome = [self stringIsPalindrome:fleeToMe];
+    NSLog(@"%d : %@", fleeToMeIsPalindrome, fleeToMe);
+    
+   NSString *norma = @"Norma is as selfless as I am, Ron.";
+   BOOL normaIsPalindrome = [self stringIsPalindrome:norma];
+    NSLog(@"%d : %@", normaIsPalindrome, norma);
+ 
+   NSString *papayaWar = @"No Sir! Away! A papaya war is on.";
+   BOOL papayaWarIsPalindrome = [self stringIsPalindrome:papayaWar];
+    NSLog(@"%d : %@", papayaWarIsPalindrome, papayaWar);
+    
     
     
     
@@ -53,7 +65,17 @@
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
-    NSString *spaceless = [string stringByReplacingOccurrencesOfString: @" " withString:@""];
+    NSArray *punctuations = @[@".", @",", @"!", @"?", @":", @";"];
+    
+    NSString *withoutPunctuation = [string copy];
+    
+    for (NSUInteger i = 0; i < [punctuations count]; i++) {
+    
+        NSString *punctuation = punctuations[i];
+        withoutPunctuation = [withoutPunctuation stringByReplacingOccurrencesOfString:punctuation withString:@""];
+    }
+    
+    NSString *spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString: @" " withString:@""];
     
     NSString *lowercase = [spaceless lowercaseString];
     
