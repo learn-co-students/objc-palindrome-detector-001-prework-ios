@@ -481,3 +481,4 @@ Run the program to see how well our method handles the palindrome sentences. It 
 ### X. Memorize Some Palindromes (optional)
 
 Because [palindromes are cool](https://www.youtube.com/watch?v=vPGTizdGwSc) (like bowties).
+<a href='https://learn.co/lessons/objc-palindrome-detector' data-visibility='hidden'>View this lesson on Learn.co</a>
