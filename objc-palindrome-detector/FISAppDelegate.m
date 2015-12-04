@@ -36,6 +36,17 @@
     BOOL aibohphobiaIsPalindrome = [self stringIsPalindrome:aibohphobia];
     NSLog(@"%d : %@", aibohphobiaIsPalindrome, aibohphobia);
     
+    NSString *notAPalindrome = @"this is not a palindrome";
+    BOOL notAPalindromeIsPalindrome = [self stringIsPalindrome:notAPalindrome];
+    NSLog(@"%d : %@", notAPalindromeIsPalindrome, notAPalindrome);
+    
+    NSString *neverOdd = @"never odd or even";
+    BOOL neverOddIsPalindrome = [self stringIsPalindrome:neverOdd];
+    NSLog(@"%d : %@", neverOddIsPalindrome, neverOdd);
+    
+    NSString *iPreferPi = @"I prefer pi";
+    BOOL iPreferPiIsPalindrome = [self stringIsPalindrome:iPreferPi];
+    NSLog(@"%d : %@", iPreferPiIsPalindrome, iPreferPi);
     
     // do not alter
     return YES;  //
@@ -62,7 +73,9 @@
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
-    NSString *lowercase = [string lowercaseString];
+    NSString *spaceless = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSString *lowercase = [spaceless lowercaseString];
     
     NSString *reverse = [self stringByReversingString:lowercase];
     
