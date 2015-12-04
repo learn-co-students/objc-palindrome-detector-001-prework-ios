@@ -21,6 +21,21 @@
     BOOL racecarIsPalindrome = [self stringIsPalindrome:racecar];
     NSLog(@"%d : %@", racecarIsPalindrome, racecar);
     
+    BOOL palindromeIsPalindrome = [self stringIsPalindrome:palindrome];
+    NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
+    
+    NSString *bob = @"Bob";
+    BOOL bobIsPalindrome = [self stringIsPalindrome:bob];
+    NSLog(@"%d : %@", bobIsPalindrome, bob);
+    
+    NSString *kanakanak = @"Kanakanak";
+    BOOL kanakanakIsPalindrome = [self stringIsPalindrome:kanakanak];
+    NSLog(@"%d : %@", kanakanakIsPalindrome, kanakanak);
+    
+    NSString *aibohphobia = @"Aibohphobia";
+    BOOL aibohphobiaIsPalindrome = [self stringIsPalindrome:aibohphobia];
+    NSLog(@"%d : %@", aibohphobiaIsPalindrome, aibohphobia);
+    
     
     // do not alter
     return YES;  //
@@ -31,15 +46,6 @@
  * Implement your methods here.
  
  */
-
-- (BOOL)stringIsPalindrome:(NSString *)string {
-    
-    NSString *reverse = [self stringByReversingString:string];
-    
-    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
-    
-    return stringIsEqualToReverse;
-}
 
 - (NSString *)stringByReversingString:(NSString *)string {
     
@@ -54,5 +60,20 @@
     return result;
 }
 
+- (BOOL)stringIsPalindrome:(NSString *)string {
+    
+    NSString *lowercase = [string lowercaseString];
+    
+    NSString *reverse = [self stringByReversingString:lowercase];
+    
+    BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
+    
+    return stringIsEqualToReverse;
+}
+
+
+
+
 
 @end
+
