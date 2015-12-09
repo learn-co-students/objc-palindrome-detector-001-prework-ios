@@ -13,8 +13,8 @@
      
      */
     
-    NSString *palindrome = @"Racecar";
-    NSLog(@"%d", [self stringIsPalingrome:palindrome]);
+    NSString *test = @"Racecar";
+    NSLog(@"%d: %@", [self stringIsPalingrome:test], test);
     
     // do not alter
     return YES;  //
@@ -40,8 +40,8 @@
 }
 
 - (BOOL)stringIsPalingrome:(NSString *)string {
+    string = [string lowercaseString];
     NSString *reverse = [self stringByReversingString:string];
-    NSLog(@"%@", reverse);
     return [reverse isEqualToString:string];
 }
 
