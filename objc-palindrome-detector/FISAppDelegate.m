@@ -13,7 +13,7 @@
      
      */
     
-    NSString *test = @"Racecar";
+    NSString *test = @"I prefer pi";
     NSLog(@"%d: %@", [self stringIsPalingrome:test], test);
     
     // do not alter
@@ -40,7 +40,8 @@
 }
 
 - (BOOL)stringIsPalingrome:(NSString *)string {
-    string = [string lowercaseString];
+    string = [[string lowercaseString] stringByReplacingOccurrencesOfString:@" "
+                                                                 withString:@""];
     NSString *reverse = [self stringByReversingString:string];
     return [reverse isEqualToString:string];
 }
