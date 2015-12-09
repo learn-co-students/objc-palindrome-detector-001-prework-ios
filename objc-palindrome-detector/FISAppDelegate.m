@@ -13,6 +13,9 @@
      
      */
     
+    NSString *palindrome = @"Racecar";
+    NSLog(@"%d", [self stringIsPalingrome:palindrome]);
+    
     // do not alter
     return YES;  //
 }   ///////////////
@@ -22,5 +25,24 @@
  * Implement your methods here.
  
  */
+
+- (NSString *)stringByReversingString:(NSString *)string {
+
+    NSString *result = @"";
+    
+    for (NSUInteger i = [string length]; i > 0; i--) {
+        NSUInteger index = i - 1;
+        unichar c = [string characterAtIndex:index];
+        result = [result stringByAppendingFormat:@"%C", c];
+    }
+    
+    return result;
+}
+
+- (BOOL)stringIsPalingrome:(NSString *)string {
+    NSString *reverse = [self stringByReversingString:string];
+    NSLog(@"%@", reverse);
+    return [reverse isEqualToString:string];
+}
 
 @end
