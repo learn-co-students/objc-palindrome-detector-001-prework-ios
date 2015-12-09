@@ -13,7 +13,7 @@
      
      */
     
-    NSString *test = @"I prefer pi";
+    NSString *test = @"I, prefer pi.";
     NSLog(@"%d: %@", [self stringIsPalingrome:test], test);
     
     // do not alter
@@ -40,8 +40,16 @@
 }
 
 - (BOOL)stringIsPalingrome:(NSString *)string {
+    NSArray *punctuation = @[@".", @",", @"!", @"?", @";", @":"];
+    
     string = [[string lowercaseString] stringByReplacingOccurrencesOfString:@" "
                                                                  withString:@""];
+    
+    for (NSUInteger i = 0; i < [punctuation count]; i++) {
+        string = [string stringByReplacingOccurrencesOfString:punctuation[i]
+                                                   withString:@""];
+    }
+    
     NSString *reverse = [self stringByReversingString:string];
     return [reverse isEqualToString:string];
 }
