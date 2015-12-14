@@ -66,7 +66,7 @@
         NSString *punctuation = punctuations[i];
         withoutPunctuation = [withoutPunctuation stringByReplacingOccurrencesOfString:punctuation withString:@""];
     }
-                              
+    
     NSString *spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     NSString *lowercase = [spaceless lowercaseString];

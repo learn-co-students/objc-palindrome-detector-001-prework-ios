@@ -8,8 +8,8 @@
 
 // declare public methods:
 
-- (BOOL)stringIsPalandrome:(NSString *)string;
+- (BOOL)stringIsPalindrome:(NSString *)string;
 
--(NSString *)stringByReversingString:(NSString *)string;
+- (NSString *)stringByReversingString:(NSString *)string;
 
 @end
