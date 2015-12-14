@@ -11,6 +11,7 @@
 		4E4D1FCB94B758188E2E306A /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = B6D2E6D69F775907F1864545 /* LaunchScreen.xib */; };
 		6B21F5CD329596AC33B79FF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E852815CC567669D750BC142 /* Images.xcassets */; };
 		786BB43D3AAFEDE190BEE2D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D859954437D87A778B706A99 /* Main.storyboard */; };
+		8646DB2C1C1F11BF0000E30C /* FPCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8646DB2B1C1F11BF0000E30C /* FPCViewController.m */; };
 		94A9D968C066691614402F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A242B381FAD1730527870F04 /* Foundation.framework */; };
 		B53EF2A7D52E46E3D7EF894F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D600AA73BAC02B2C41E55CA /* main.m */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,8 @@
 		6F3FB7E75EEFE194B372AAB4 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		6FFCBEEED8CA415889676FC4 /* objc-palindrome-detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-palindrome-detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D79FDE177DAB4A6467467E /* objc-palindrome-detector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "objc-palindrome-detector-Info.plist"; sourceTree = "<group>"; };
+		8646DB2A1C1F11BF0000E30C /* FPCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPCViewController.h; sourceTree = "<group>"; };
+		8646DB2B1C1F11BF0000E30C /* FPCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPCViewController.m; sourceTree = "<group>"; };
 		8D600AA73BAC02B2C41E55CA /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9840ECF18DDEA69A68E4FF44 /* objc-palindrome-detector-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objc-palindrome-detector-Prefix.pch"; sourceTree = "<group>"; };
 		A242B381FAD1730527870F04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -106,6 +109,8 @@
 				56177234D2B50E76F3569EB6 /* FISAppDelegate.h */,
 				4830B67947194332964F30D6 /* FISAppDelegate.m */,
 				D859954437D87A778B706A99 /* Main.storyboard */,
+				8646DB2A1C1F11BF0000E30C /* FPCViewController.h */,
+				8646DB2B1C1F11BF0000E30C /* FPCViewController.m */,
 				1665EBEA857ADEAFD0B69947 /* Resources */,
 			);
 			path = "objc-palindrome-detector";
@@ -201,6 +206,7 @@
 			files = (
 				46D96E21132562C8CAB6A3D5 /* FISAppDelegate.m in Sources */,
 				4E4D1FCB94B758188E2E306A /* LaunchScreen.xib in Sources */,
+				8646DB2C1C1F11BF0000E30C /* FPCViewController.m in Sources */,
 				B53EF2A7D52E46E3D7EF894F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
