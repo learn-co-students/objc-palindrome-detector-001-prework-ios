@@ -39,7 +39,9 @@
     
     NSString *reverse = [self stringByReversingString:string];
     
-    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
+    NSString *lowercase = [string lowercaseString];
+    
+    BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
     
     return stringIsEqualToReverse;
 }
