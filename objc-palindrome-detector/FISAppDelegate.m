@@ -13,9 +13,16 @@
      
      */
     
+    NSString *palindrome = @"palindrome";
+    NSString *reversed = [self stringByReversingString:palindrome];
+    NSLog(@"%@ : %@", palindrome, reversed);
+    
     NSString *racecar = @"racecar";
     BOOL racecarIsPalindrome = [self stringIsPalindrome:racecar];
     NSLog(@"%d : %@", racecarIsPalindrome, racecar);
+    
+    BOOL palindromeIsPalindrome = [self stringIsPalindrome:palindrome];
+    NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
     
     // do not alter
     return YES;  //
