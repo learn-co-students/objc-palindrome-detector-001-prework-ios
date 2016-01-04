@@ -37,9 +37,9 @@
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
     
-    NSString *reverse = [self stringByReversingString:string];
-    
     NSString *lowercase = [string lowercaseString];
+    
+    NSString *reverse = [self stringByReversingString:lowercase];
     
     NSLog(@"lowercase: %@, reverse: %@", lowercase, reverse);
     BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
