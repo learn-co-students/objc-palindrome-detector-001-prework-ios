@@ -13,6 +13,10 @@
      
      */
     
+    NSString *palindrome = @"palindrome";
+    NSString *reversed = [self stringByReversingString:palindrome];
+    NSLog(@"%@ : %@", palindrome, reversed);
+    
     // do not alter
     return YES;  //
 }   ///////////////
