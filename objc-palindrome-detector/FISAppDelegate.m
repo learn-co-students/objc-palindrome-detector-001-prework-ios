@@ -23,4 +23,12 @@
  
  */
 
+- (BOOL)stringIsPalindrome:(NSString *)string {
+    return NO;
+}
+
+- (NSString *)stringByReversingString:(NSString *)string {
+    return nil;
+}
+
 @end
