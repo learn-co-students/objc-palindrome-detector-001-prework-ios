@@ -28,7 +28,16 @@
 }
 
 - (NSString *)stringByReversingString:(NSString *)string {
-    return nil;
+    
+    NSString *result = @"";
+    
+    for (NSUInteger i = [string length]; i > 0; i--) {
+        NSUInteger index = i - 1;
+        unichar c = [string characterAtIndex:index];
+        result = [result stringByAppendingFormat:@"%C", c];
+    }
+    
+    return result;
 }
 
 @end
