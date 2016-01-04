@@ -41,7 +41,6 @@
     
     NSString *reverse = [self stringByReversingString:lowercase];
     
-    NSLog(@"lowercase: %@, reverse: %@", lowercase, reverse);
     BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
     
     return stringIsEqualToReverse;
