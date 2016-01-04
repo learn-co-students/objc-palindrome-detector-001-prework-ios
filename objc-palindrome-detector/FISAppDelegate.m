@@ -13,17 +13,17 @@
      
      */
     
-    NSString *notAPalindrome = @"this is not a palindrome";
-    BOOL notAPalindromeIsPalindrome = [self stringIsPalindrome:notAPalindrome];
-    NSLog(@"%d : %@", notAPalindromeIsPalindrome, notAPalindrome);
+    NSString *fleeToMe = @"Flee to me, remote elf.";
+    BOOL fleeToMeIsPalindrome = [self stringIsPalindrome:fleeToMe];
+    NSLog(@"%d : %@", fleeToMeIsPalindrome, fleeToMe);
     
-    NSString *neverOdd = @"never odd or even";
-    BOOL neverOddIsPalindrome = [self stringIsPalindrome:neverOdd];
-    NSLog(@"%d : %@", neverOddIsPalindrome, neverOdd);
+    NSString *norma = @"Norma is as selfless as I am, Ron.";
+    BOOL normaIsPalindrome = [self stringIsPalindrome:norma];
+    NSLog(@"%d : %@", normaIsPalindrome, norma);
     
-    NSString *iPreferPi = @"I prefer pi";
-    BOOL iPreferPiIsPalindrome = [self stringIsPalindrome:iPreferPi];
-    NSLog(@"%d : %@", iPreferPiIsPalindrome, iPreferPi);
+    NSString *papayaWar = @"No sir! Away! A papaya war is on.";
+    BOOL papayaWarIsPalindrome = [self stringIsPalindrome:papayaWar];
+    NSLog(@"%d : %@", papayaWarIsPalindrome, papayaWar);
     
     // do not alter
     return YES;  //
