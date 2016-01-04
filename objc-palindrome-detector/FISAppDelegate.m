@@ -28,7 +28,12 @@
  */
 
 - (BOOL)stringIsPalindrome:(NSString *)string {
-    return NO;
+    
+    NSString *reverse = [self stringByReversingString:string];
+    
+    BOOL stringIsEqualToReverse = [string isEqualToString:reverse];
+    
+    return stringIsEqualToReverse;
 }
 
 - (NSString *)stringByReversingString:(NSString *)string {
