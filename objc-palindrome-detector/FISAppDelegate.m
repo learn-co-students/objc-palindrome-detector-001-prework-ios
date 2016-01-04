@@ -13,16 +13,17 @@
      
      */
     
-    NSString *palindrome = @"palindrome";
-    NSString *reversed = [self stringByReversingString:palindrome];
-    NSLog(@"%@ : %@", palindrome, reversed);
+    NSString *bob = @"Bob";
+    BOOL bobIsPalindrome = [self stringIsPalindrome:bob];
+    NSLog(@"%d : %@", bobIsPalindrome, bob);
     
-    NSString *racecar = @"racecar";
-    BOOL racecarIsPalindrome = [self stringIsPalindrome:racecar];
-    NSLog(@"%d : %@", racecarIsPalindrome, racecar);
+    NSString *kanakanak = @"Kanakanak";
+    BOOL kanakanakIsPalindrome = [self stringIsPalindrome:kanakanak];
+    NSLog(@"%d : %@", kanakanakIsPalindrome, kanakanak);
     
-    BOOL palindromeIsPalindrome = [self stringIsPalindrome:palindrome];
-    NSLog(@"%d : %@", palindromeIsPalindrome, palindrome);
+    NSString *aibohphobia = @"Aibohphobia";
+    BOOL aibohphobiaIsPalindrome = [self stringIsPalindrome:aibohphobia];
+    NSLog(@"%d : %@", aibohphobiaIsPalindrome, aibohphobia);
     
     // do not alter
     return YES;  //
