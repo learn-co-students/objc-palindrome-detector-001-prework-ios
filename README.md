@@ -1,5 +1,7 @@
 # Code-Along: Palindrome Detector
 
+# Added solution to the GitHub
+
 ## Objectives
 
 1. Declare methods in the `.h` header file using proper syntax.
@@ -477,7 +479,3 @@ Run the program to see how well our method handles the palindrome sentences. It 
 1 : Norma is as selfless as I am, Ron.
 1 : No sir! Away! A papaya war is on.
 ```
-
-### X. Memorize Some Palindromes (optional)
-
-Because [palindromes are cool](https://www.youtube.com/watch?v=vPGTizdGwSc) (like bowties).
