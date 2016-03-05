@@ -92,7 +92,9 @@
     //Create a new NSString variable called withoutPunctuation and assign to a copy of the string argument variable
     // iterates over the punctuations array
     //Within the for loop, create new NSString variable called punctuation and assign it to the subscript of the punctuations array using the current value of i
-    // Still within the for loop, reassign the withoutPunctuation variable to capture a call of the stringByReplacingOccurrencesOfString:withString: method on the withoutPunctuation variable (itself). The first argument should be the punctuation string variable, and the second argument should be an empty string literal (@""):
+    // Still within the for loop, reassign the withoutPunctuation variable to capture a call of the stringByReplacingOccurrencesOfString:withString: method on the withoutPunctuation variable (itself). The first argument should be the punctuation string variable, and the second argument should be an empty string literal (@""):    
+    // Refactor the creation of the spaceless variable to use withoutPunctuation instead of the string argument variable:
+
     
     NSArray *punctuations = @[ @".", @",", @"!", @"?", @":", @";" ];
     NSString *withoutPunctuation = [string copy];
