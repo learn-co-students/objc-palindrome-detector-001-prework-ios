@@ -317,7 +317,7 @@ lowercase: aibohphobia, reverse: aibohphobiA
 ```
 It looks like we reversed the string *before* we lowercased it, which means that we're comparing the lowercased version to a reversed version that contains an uppercase letter in it. This causes the comparison to fail.
 
-To fix this, we should be move the statement creating `lowercase` to above the statement creating the `reverse` string, and refactor `reverse`'s assignment to use `lowercase` as its method argument instead of `string`:
+To fix this, we should move the statement creating `lowercase` to above the statement creating the `reverse` string, and refactor `reverse`'s assignment to use `lowercase` as its method argument instead of `string`:
 
 ```objc
 - (BOOL)stringIsPalindrome:(NSString *)string {
@@ -482,3 +482,5 @@ Run the program to see how well our method handles the palindrome sentences. It 
 
 Because [palindromes are cool](https://www.youtube.com/watch?v=vPGTizdGwSc) (like bowties).
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/objc-palindrome-detector' title='Code-Along: Palindrome Detector'>Code-Along: Palindrome Detector</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/objc-palindrome-detector'>Code-Along: Palindrome Detector</a> on Learn.co and start learning to code for free.</p>
