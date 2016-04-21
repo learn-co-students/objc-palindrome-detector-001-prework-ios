@@ -182,7 +182,7 @@ Hooray! Our first method works!
 
 ### V. Detecting a Palindrome
 
-Now the we've verified that our string reversal method works, we can get to work on the implementation of our `stringIsPalindrome:` method.
+Now that we've verified that our string reversal method works, we can get to work on the implementation of our `stringIsPalindrome:` method.
 
 In our first pass at this method, let's use the simplest case for our first example: an all-lowercase single word such as "*racecar*". We'll add complexity to our method later. For now, let's just make sure we can get the core of the logic down.
 
