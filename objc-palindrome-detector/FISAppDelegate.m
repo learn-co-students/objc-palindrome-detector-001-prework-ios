@@ -4,6 +4,14 @@
 
 @implementation FISAppDelegate
 
+// Objectives:
+// 1. Declare methods in the .h header file using proper syntax.
+// 2. Define methods in the .m implementation file using proper syntax.
+// 3. Engage a problem to be solved in code by breaking the approach down into smaller steps.
+// 4. Solve each step sequentially in increasing levels of complexity.
+// 5. Check your code's behavior periodically with NSLog() as you progress in your solution.
+// 6. Call another method in the same file by using the self keyword
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
@@ -75,7 +83,7 @@
 // Detecting Palindrome.
 - (BOOL)stringIsPalindrome:(NSString *)string {
    
-    // Removing punctuation. 
+    // Removing punctuation.
     NSArray *punctuations = @[@".", @",", @"!", @"?", @":", @";"];
     NSString *withoutPunctuation = [string copy];
     for (NSUInteger i=0; i<[punctuations count]; i++) {
