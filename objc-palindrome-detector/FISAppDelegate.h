@@ -12,4 +12,7 @@
  
  */
 
+- (BOOL)stringIsPalingrome:(NSString *)string;
+- (NSString *)stringByReversingString:(NSString *)string;
+
 @end
