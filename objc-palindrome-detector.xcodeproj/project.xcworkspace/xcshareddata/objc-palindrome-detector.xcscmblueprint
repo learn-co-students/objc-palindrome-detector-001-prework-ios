@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8AAAAF381249D2661D87EF15E06486453244B0CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "79C12C7800DD2FF39672AB4061857076B4146941" : 0,
+    "8AAAAF381249D2661D87EF15E06486453244B0CF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "65064075-2F0E-4E6A-8A46-0088AC39BE24",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "79C12C7800DD2FF39672AB4061857076B4146941" : "",
+    "8AAAAF381249D2661D87EF15E06486453244B0CF" : "objc-palindrome-detector-001-prework-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "objc-palindrome-detector",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "objc-palindrome-detector.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:joanagj\/Simons-Stamp-Collection.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "79C12C7800DD2FF39672AB4061857076B4146941"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:joanagj\/objc-palindrome-detector-001-prework-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8AAAAF381249D2661D87EF15E06486453244B0CF"
+    }
+  ]
+}
