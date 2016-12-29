@@ -11,5 +11,8 @@
  * Declare your methods here.
  
  */
+-(BOOL)stringIsPalindrome:(NSString*)string;
+
+-(NSString *)stringByReversingString:(NSString*)string;
 
 @end
