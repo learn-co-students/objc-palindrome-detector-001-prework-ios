@@ -12,4 +12,8 @@
  
  */
 
+- (BOOL) stringIsPalidrom: (NSString *)string;
+
+- (NSString *) stringByReversingString: (NSString*)string;
+
 @end
