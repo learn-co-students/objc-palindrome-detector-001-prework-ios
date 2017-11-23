@@ -6,10 +6,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-/**
- 
- * Declare your methods here.
- 
- */
+    -(BOOL)stringIsPalindrome:(NSString *)string;
+
+    -(NSString *)stringByReverseString:(NSString *)string;
 
 @end
