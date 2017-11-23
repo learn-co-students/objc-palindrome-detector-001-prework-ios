@@ -12,4 +12,9 @@
  
  */
 
+// stringIsPalindrome takes one NSString argument called string and returns a BOOL.
+- (BOOL)stringIsPalindrome: (NSString *)string;
+// stringByReverseString takes on NSString argument called string and returns an NSString.
+- (NSString *)stringByReversingString:(NSString *)string;
+
 @end
